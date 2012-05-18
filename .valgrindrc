@@ -1,0 +1,1 @@
+--tool=callgrind --verbose --track-fds=yes --trace-children=yes --time-stamp=yes

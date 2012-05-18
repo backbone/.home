@@ -1,0 +1,21 @@
+# Отключаем приветствие
+startup_message off
+# Включаем utf8
+defutf8 on
+# Использовать визуальный сигнал (мигание экрана) вместо писка динамика
+vbell on
+# Размер буфера прокрутки
+defscrollback 1000
+# Производить отключение сессии при разрыве связи с терминалом
+autodetach on
+# Открывать Login-шелл
+shell -$SHELL
+# Активировать возможность прокрутки в xterm (и других эмуляторах терминала)
+termcapinfo urxvt* ti@:te@
+# Волшебная строка
+shelltitle '$ |sh'
+# Строка состояния
+hardstatus alwayslastline "%{+b wk} %c $LOGNAME@%H %=[ %w ] "
+# По клавише <Esc> создать окно и запустить в нем команду su
+bind \033 screen -ln -t root 9 su
+

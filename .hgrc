@@ -1,0 +1,83 @@
+[ui]
+username = Kolan Sh <mecareful@gmail.com>
+
+[hostfingerprints]
+
+[ui]
+verbose = true
+merge = vimdiff
+
+%include ~/.netrc.hg
+
+[defaults]
+cdiff = -q
+branches =
+churn = --progress
+
+[extdiff]
+cmd.cdiff = colordiff
+opts.cdiff = -uprN
+
+[extensions]
+duckcharset = ~/.hgext/duckcharset/hgext/duckcharset.py
+onsub= ~/.hgext/onsub/onsub.py
+compass = ~/.hgext/compass/compass.py
+hggit = ~/.hgext/hg-git/hggit
+# fixcase = ~/.hgext/fixcase/fixcase.py
+hgext.bookmarks =
+eol =
+graphlog=
+graphlog = 
+highlight=
+color =
+#rebase=
+transplant=
+extdiff=
+record=
+fetch=
+convert=
+# brokes .hgignore (for example in /.hg)
+#largefiles =
+pager =
+parentrevspec =
+progress =
+purge=
+rebase =
+relink =
+schemes=
+mq =
+churn =
+
+[web]
+pygments_style=tango
+
+[merge-tools]
+vimdiff.executable = vim
+vimdiff.args = -d $base $local $output $other +close +close
+
+[git]
+intree=1
+exportbranch=refs/heads/from-hg
+
+[web]
+cacerts=
+
+[largefiles]
+minsize = 1
+
+[pager]
+pager = LESS='FSRX' less
+quiet = True
+attend = annotate, cat, diff, export, glog, log, qdiff, compass, tags, help
+
+[progress]
+delay = 3
+changedelay = 1
+refresh = 0.1
+clear-complete = True
+disable = False
+assume-tty = False
+
+[subpaths]
+http[s]?://(.*)/(.*)/../(.*) = https://\1/\2/\3
+http[s]?://(.*)/(.*)/(.*) = https://\1/\2/../\3

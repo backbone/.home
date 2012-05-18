@@ -1,0 +1,6 @@
+[main]
+CmdDialogList = ctrl-alt-prime
+
+[dialog]
+CmdDialogList = ctrl-alt-prime
+
