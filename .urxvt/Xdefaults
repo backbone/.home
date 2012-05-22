@@ -1,3 +1,4 @@
+URxvt.colorBD: #CC5533
 URxvt*background: #000000
 URxvt*foreground: #C0C0C0
 URxvt.color0: rgb:46/70/73
@@ -90,7 +91,7 @@ URxvt.tabbed.tabbar-bg:     0
 URxvt.tabbed.tab-fg:        0
 URxvt.tabbed.tab-bg:        7
 ! Оболочка
-URxvt.geometry:         128x64
+URxvt.geometry:         96x32
 URxvt.loginShell:       false
 URxvt.meta:             ignore
 URxvt.utmpInhibit:      true
