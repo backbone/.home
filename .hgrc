@@ -81,6 +81,9 @@ clear-complete = True
 disable = False
 assume-tty = False
 
+[alias]
+s = status -mard -S
+
 [subpaths]
 http[s]?://(.*)/(.*)/../(.*) = https://\1/\2/\3
 http[s]?://(.*)/(.*)/(.*) = https://\1/\2/../\3
