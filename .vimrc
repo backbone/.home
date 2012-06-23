@@ -4,12 +4,12 @@
 syntax on             " включить подсветку синтаксиса
 set ts=8              " у меня табуляция (tabstop) 4 символа
 set tabstop=8
-set shiftwidth=8
+set shiftwidth=2
 set textwidth=8
-set autoindent
 set tw=159
+set expandtab
+set autoindent
 set copyindent
-" set expandtab
 set background=dark   " весьма важная штука! :)
 set lbr
 set showcmd
@@ -116,3 +116,46 @@ map <F4> [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 set foldenable
 set foldmethod=syntax
 
+" VUNDLE "
+set nocompatible               " be iMproved
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+"
+" original repos on github
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'tpope/vim-rails.git'
+" vim-scripts repos
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+" non github repos
+Bundle 'git://git.wincent.com/command-t.git'
+" ...
+
+filetype plugin indent on     " required!
+"
+" Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle command are not allowed..
+
+" clang_complete
+" let g:clang_complete_copen = 1
+" let g:clang_user_options='|| exit 0'
+filetype plugin on
+let g:clang_user_options='|| exit 0'
+let g:clang_complete_auto = 1
+let g:clang_complete_copen = 1
