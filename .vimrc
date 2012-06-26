@@ -62,12 +62,12 @@ imap <F10> <esc>:q!<cr>i
 :set tabpagemax=99
 nmap <C-a> :tabnew<cr>
 imap <C-a> <ESC>:tabnew<cr>
-map <C-k> :tabnext<cr>
-nmap <C-k> :tabnext<cr>
-imap <C-k> :tabnext<cr>
-map <C-j> :tabprev<cr>
-nmap <C-j> :tabprev<cr>
-imap <C-j> :tabprev<cr>
+map <C-x> :tabnext<cr>
+nmap <C-x> :tabnext<cr>
+imap <C-x> :tabnext<cr>
+map <C-z> :tabprev<cr>
+nmap <C-z> :tabprev<cr>
+imap <C-z> :tabprev<cr>
 
 " кириллица
 set encoding=utf-8
