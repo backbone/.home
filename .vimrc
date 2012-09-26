@@ -194,3 +194,7 @@ let vala_no_tab_space_error = 1
 let tlist_vala_settings='c#;d:macro;t:typedef;n:namespace;c:class;'.
   \ 'E:event;g:enum;s:struct;i:interface;'.
   \ 'p:properties;m:method'
+
+" ----- TagBar ------
+nmap <F9> :TagbarToggle<CR> 
+let g:tagbar_ctags_bin = "anjuta-tags"
