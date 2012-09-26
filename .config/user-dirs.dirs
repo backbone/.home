@@ -1,0 +1,5 @@
+XDG_DESKTOP_DIR="$HOME/.big/tmp/desktop/"
+XDG_DOCUMENTS_DIR="$HOME/.big/tmp/documents"
+XDG_MUSIC_DIR="$HOME/.big/tmp/music"
+XDG_PICTURES_DIR="$HOME/.big/tmp/pictures"
+XDG_VIDEOS_DIR="$HOME/.big/tmp/videos"
