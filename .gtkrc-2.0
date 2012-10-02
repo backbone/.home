@@ -1,0 +1,19 @@
+# -- THEME AUTO-WRITTEN DO NOT EDIT
+include "/usr/share/themes/Equinox/gtk-2.0/gtkrc"
+
+style "user-font" {
+	font_name = "Liberation Sans 8"
+}
+
+widget_class "*" style "user-font"
+
+gtk-font-name="Liberation Sans 8"
+
+gtk-theme-name  = "Equinox"
+
+include "/home/kolan/.gtkrc.mine"
+
+gtk-cursor-theme-name = "gentoo-silver"
+gtk-cursor-theme-size = "16"
+
+# -- THEME AUTO-WRITTEN DO NOT EDIT
