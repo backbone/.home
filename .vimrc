@@ -198,3 +198,6 @@ let tlist_vala_settings='c#;d:macro;t:typedef;n:namespace;c:class;'.
 " ----- TagBar ------
 nmap <F9> :TagbarToggle<CR> 
 let g:tagbar_ctags_bin = "anjuta-tags"
+
+" ----- NERDTree ------
+nmap <F12> :NERDTreeToggle<CR> 
