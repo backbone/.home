@@ -27,6 +27,7 @@ onsub= ~/.hgext/onsub/onsub.py
 compass = ~/.hgext/compass/compass.py
 hggit = ~/.hgext/hg-git/hggit
 hgshelve = ~/.hgext/hgshelve/hgshelve.py
+histedit = ~/.hgext/histedit/hg_histedit.py
 hgext.hgshelve=
 # fixcase = ~/.hgext/fixcase/fixcase.py
 hgext.bookmarks =
