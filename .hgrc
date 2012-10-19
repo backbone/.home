@@ -26,6 +26,8 @@ duckcharset = ~/.hgext/duckcharset/hgext/duckcharset.py
 onsub= ~/.hgext/onsub/onsub.py
 compass = ~/.hgext/compass/compass.py
 hggit = ~/.hgext/hg-git/hggit
+hgshelve = ~/.hgext/hgshelve/hgshelve.py
+hgext.hgshelve=
 # fixcase = ~/.hgext/fixcase/fixcase.py
 hgext.bookmarks =
 eol =
@@ -50,6 +52,9 @@ relink =
 schemes=
 mq =
 churn =
+
+[patch]
+eol = auto
 
 [web]
 pygments_style=tango
