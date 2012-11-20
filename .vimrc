@@ -26,7 +26,7 @@ function! GnuIndent()
     setlocal tabstop=8
 endfunction 
 
-au FileType c,cpp,vala call GnuIndent()
+au FileType c,cpp call GnuIndent()
 
 " отключение бэкапов
 set nobackup
