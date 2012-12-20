@@ -1,6 +1,6 @@
 [user]
-        email = mecareful@gmail.com
-        name = Kolan Sh
+	email = mecareful@gmail.com
+	name = Kolan Sh
 
 [color]
 	ui = auto
@@ -47,3 +47,6 @@
 
 [merge]
 	tool = vimdiff
+
+[core]
+	quotepath = false
