@@ -170,9 +170,6 @@ let g:clang_complete_auto = 1
 let g:clang_complete_copen = 1
 
 " ------- Vala --------
-autocmd BufRead *.vala,*.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-au BufRead,BufNewFile *.vala,*.vapi setfiletype vala
-
 " Disable valadoc syntax highlight
 "let vala_ignore_valadoc = 1
 

@@ -3,8 +3,7 @@
 " Maintainers:	Emmanuele Bassi <ebassi@gnome.org>
 " 		Hans Vercammen <hveso3@gmail.com>
 " 		pancake <pancake@nopcode.org>
-" 		Sebastian Reichel <sre@ring0.de>
-" Last Change: 	2012-02-19
+" Last Change: 	2009-10-28
 " Filenames: 	*.vala *.vapi
 "
 " REFERENCES:
@@ -14,12 +13,9 @@
 " 	- validate code attributes
 " 	- better error checking for known errors
 " 	- full support for valadoc
-"
-" 	add vala in /usr/share/vim/vim73/scripts.vim below ruby
-" 	to have shebang support
 
 if exists("b:current_syntax")
-  finish
+    finish
 endif
 
 let s:vala_cpo_save = &cpo
@@ -55,13 +51,13 @@ syn keyword valaTodo 			contained TODO FIXME XXX NOTE
 " valadoc Comments (ported from javadoc comments in java.vim)
 " TODO: need to verify valadoc syntax
 if !exists("vala_ignore_valadoc")
-  syn cluster valaDocCommentGroup	contains=valaDocTags,valaDocSeeTag
+  syn cluster valaDocCommentGroup 	contains=valaDocTags,valaDocSeeTag
   syn region  valaDocTags 		contained start="{@\(link\|linkplain\|inherit[Dd]oc\|doc[rR]oot\|value\)" end="}"
   syn match   valaDocTags 		contained "@\(param\|exception\|throws\|since\)\s\+\S\+" contains=valaDocParam
   syn match   valaDocParam 		contained "\s\S\+"
   syn match   valaDocTags 		contained "@\(author\|brief\|version\|return\|deprecated\)\>"
-  syn region  valaDocSeeTag		contained matchgroup=valaDocTags start="@see\s\+" matchgroup=NONE end="\_."re=e-1 contains=valaDocSeeTagParam
-  syn match   valaDocSeeTagParam	contained @"\_[^"]\+"\|<a\s\+\_.\{-}</a>\|\(\k\|\.\)*\(#\k\+\((\_[^)]\+)\)\=\)\=@ extend
+  syn region  valaDocSeeTag       	contained matchgroup=valaDocTags start="@see\s\+" matchgroup=NONE end="\_."re=e-1 contains=valaDocSeeTagParam
+  syn match   valaDocSeeTagParam  	contained @"\_[^"]\+"\|<a\s\+\_.\{-}</a>\|\(\k\|\.\)*\(#\k\+\((\_[^)]\+)\)\=\)\=@ extend
 endif
 
 " Comment Strings (ported from c.vim)
@@ -72,7 +68,7 @@ if exists("vala_comment_strings")
   syn cluster 	valaCommentStringGroup 	contains=valaCommentString,valaCharacter,valaNumber
 
   syn region 	valaCommentL		start="//" end="$" keepend contains=@valaCommentGroup,valaComment2String,valaCharacter,valaNumber,valaSpaceError,@Spell
-  syn region 	valaComment		matchgroup=valaCommentStart start="/\*" end="\*/" contains=@valaCommentGroup,@valaCommentStringGroup,valaCommentStartError,valaSpaceError,@Spell extend fold
+  syn region 	valaComment		matchgroup=valaCommentStart start="/\*" end="\*/" contains=@valaCommentGroup,@valaCommentStringGroup,valaCommentStartError,valaSpaceError,@Spell extend
   if !exists("vala_ignore_valadoc")
     syn region 	valaDocComment 		matchgroup=valaCommentStart start="/\*\*" end="\*/" keepend contains=@valaCommentGroup,@valaDocCommentGroup,@valaCommentStringGroup,valaCommentStartError,valaSpaceError,@Spell
   endif
@@ -83,17 +79,6 @@ else
     syn region 	valaDocComment 		matchgroup=valaCommentStart start="/\*\*" end="\*/" keepend contains=@valaCommentGroup,@valaDocCommentGroup,valaCommentStartError,valaSpaceError,@Spell
   endif
 endif
-
-syn region	valaPreCondit		start="^\s*\(%:\|#\)\s*\(if\|ifdef\|ifndef\|elif\)\>" skip="\\$" end="$" end="//"me=s-1
-syn match	valaPreCondit		display "^\s*\(%:\|#\)\s*\(else\|endif\)\>"
-
-" Comment if 0 blocks (ported from c.vim)
-if !exists("vala_no_if0")
-  syn region	valaCppOut		start="^\s*\(%:\|#\)\s*if\s\+0\+\>" end=".\@=\|$" contains=valaCppOut2 fold
-  syn region	valaCppOut2		contained start="0" end="^\s*\(%:\|#\)\s*\(endif\>\|else\>\|elif\>\)" contains=valaSpaceError,valaCppSkip
-  syn region	valaCppSkip		contained start="^\s*\(%:\|#\)\s*\(if\>\|ifdef\>\|ifndef\>\)" skip="\\$" end="^\s*\(%:\|#\)\s*endif\>" contains=valaSpaceError,valaCppSkip
-endif
-
 " match comment errors
 syntax match valaCommentError 		display "\*/"
 syntax match valaCommentStartError 	display "/\*"me=e-1 contained
@@ -141,9 +126,6 @@ else
 endif
 exec "syn sync ccomment valaComment minlines=" . b:vala_minlines
 
-" code folding
-syn region valaBlock			start="{" end="}" transparent fold
-
 " The default highlighting.
 hi def link valaType			Type
 hi def link valaStorage			StorageClass
@@ -183,14 +165,6 @@ hi def link valaSpecialChar		SpecialChar
 hi def link valaNumber			Number
 hi def link valaUnicodeNumber		SpecialChar
 hi def link valaUnicodeSpecifier	SpecialChar
-
-hi def link valaPreCondit		PreCondit
-
-if !exists("vala_no_if0")
-  hi def link valaCppSkip		valaCppOut
-  hi def link valaCppOut2		valaCppOut
-  hi def link valaCppOut		Comment
-endif
 
 let b:current_syntax = "vala"
 
