@@ -2,6 +2,9 @@
 username = Kolan Sh <mecareful@gmail.com>
 
 [hostfingerprints]
+bitbucket.org=24:9c:45:8b:9c:aa:ba:55:4e:01:6d:58:ff:e4:28:7d:2a:14:ae:3b
+hg.backbone.ws=b3:bd:3f:03:21:58:38:9e:16:f5:6b:90:8d:f2:3b:17:42:6b:52:28
+hg.insysltd.ru=ec:ff:06:cf:59:88:ae:58:eb:f4:79:30:56:f7:36:c2:dd:52:a9:41
 
 [ui]
 verbose = true
@@ -23,6 +26,9 @@ duckcharset = ~/.hgext/duckcharset/hgext/duckcharset.py
 onsub= ~/.hgext/onsub/onsub.py
 compass = ~/.hgext/compass/compass.py
 hggit = ~/.hgext/hg-git/hggit
+hgshelve = ~/.hgext/hgshelve/hgshelve.py
+histedit = ~/.hgext/histedit/hg_histedit.py
+hgext.hgshelve=
 # fixcase = ~/.hgext/fixcase/fixcase.py
 hgext.bookmarks =
 eol =
@@ -47,6 +53,9 @@ relink =
 schemes=
 mq =
 churn =
+
+[patch]
+eol = auto
 
 [web]
 pygments_style=tango
@@ -78,6 +87,13 @@ clear-complete = True
 disable = False
 assume-tty = False
 
+[alias]
+s = status -mard -S
+
 [subpaths]
-http[s]?://(.*)/(.*)/../(.*) = https://\1/\2/\3
-http[s]?://(.*)/(.*)/(.*) = https://\1/\2/../\3
+# step 2
+([^/@]+)/@@/([^/@]+)$ = \1/@@@/\2
+# step 1
+([^/@]+)/([^/@]+)$ = \1/@@/\2
+# step 2
+([^/@]+)/@@@/([^/@]+)$ = \2
