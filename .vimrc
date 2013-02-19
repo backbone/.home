@@ -26,7 +26,13 @@ function! GnuIndent()
     setlocal tabstop=8
 endfunction 
 
+" Setup for the Vala coding format standard
+function! ValaIndent()
+    setlocal shiftwidth=4
+endfunction
+
 au FileType c,cpp call GnuIndent()
+au FileType vala,vapi call ValaIndent()
 
 " отключение бэкапов
 set nobackup
