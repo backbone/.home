@@ -51,7 +51,7 @@
 ##    title is displayed).  This make tab bar look nicer.
 ##
 ## Added by StephenB:
-## 
+##
 ## 7. Tabs can be named with Shift+Up (Enter to confirm, Escape to
 ##    cancel).
 ##
@@ -467,7 +467,7 @@ sub tab_key_press {
    my ($self, $tab, $event, $keysym, $str) = @_;
 
    # setting binding keys
-   #open FILE, ">/tmp/key.txt" or die $!; 
+   #open FILE, ">/tmp/key.txt" or die $!;
    #printf FILE $keysym;
    #close FILE;
 
@@ -502,7 +502,7 @@ sub tab_key_press {
       }
 
       # next tab
-      if ($keysym == 0x004b || $keysym == 0x006b) {
+      elsif ($keysym == 0x004b || $keysym == 0x006b) {
          if (@{ $self->{tabs} } > 1) {
             $self->change_tab($tab, 1);
          }
@@ -511,7 +511,7 @@ sub tab_key_press {
 
 
       # new tab
-      if ($keysym == 0x003b) {
+      elsif ($keysym == 0x003b) {
          $self->new_tab;
          return 1;
 
@@ -527,7 +527,7 @@ sub tab_key_press {
       }
 
       # move tab left
-      if ($keysym == 0x0048 || $keysym == 0x0068) {
+      elsif ($keysym == 0x0048 || $keysym == 0x0068) {
          if (@{ $self->{tabs} } > 1) {
             my $idx1 = 0;
             ++$idx1 while $self->{tabs}[$idx1] != $tab;
@@ -541,7 +541,7 @@ sub tab_key_press {
       }
 
       # move tab right
-      if ($keysym == 0x0047 || $keysym == 0x0067) {
+      elsif ($keysym == 0x0047 || $keysym == 0x0067) {
          if (@{ $self->{tabs} } > 1) {
             my $idx1 = 0;
             ++$idx1 while $self->{tabs}[$idx1] != $tab;
@@ -553,6 +553,13 @@ sub tab_key_press {
          }
          return 1;
       }
+
+      # kill tab
+      elsif ($keysym == 0x0044) {
+         $tab->destroy;
+
+         return 1;
+       }
    }
 
    ();
