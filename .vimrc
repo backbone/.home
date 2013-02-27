@@ -26,7 +26,13 @@ function! GnuIndent()
     setlocal tabstop=8
 endfunction 
 
+" Setup for the Vala coding format standard
+function! ValaIndent()
+    setlocal shiftwidth=4
+endfunction
+
 au FileType c,cpp call GnuIndent()
+au FileType vala,vapi call ValaIndent()
 
 " отключение бэкапов
 set nobackup
@@ -89,6 +95,7 @@ menu Encoding.CP866    :e ++enc=cp866<CR>
 menu Encoding.KOI8-U   :e ++enc=koi8-u<CR>
 menu Encoding.UTF-8    :e ++enc=utf-8<CR>
 map <F8> :emenu Encoding.<TAB>
+set fileencodings=utf-8,cp1251,cp866,koi8-r
 
 " вкл/выкл автоперенос
 set pastetoggle=<F5>
