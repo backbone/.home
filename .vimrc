@@ -153,6 +153,7 @@ Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
+Bundle 'vim-tags'
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
 " ...
