@@ -157,6 +157,7 @@ Bundle 'FuzzyFinder'
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
 " ...
+Bundle 'majutsushi/tagbar'
 
 filetype plugin indent on     " required!
 "
