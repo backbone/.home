@@ -50,3 +50,5 @@
 
 [core]
 	quotepath = false
+[push]
+	default = matching
