@@ -20,6 +20,7 @@ URxvt.color15: rgb:ff/ff/ff
 
 ! Имя терминала
 ! URxvt*termName: screen-256color
+URxvt*termName: rxvt
 
 ! Будет ли курсор мигать
 URxvt.cursorBlink:      false
