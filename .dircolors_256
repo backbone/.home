@@ -567,6 +567,10 @@ EXEC                  01;32                 # This is for files with execute per
 .OBJ                  38;5;240
 .old                  38;5;240
 .OLD                  38;5;240
+.orig                 38;5;240
+.ORIG                 38;5;240
+.original             38;5;240
+.ORIGINAL             38;5;240
 .pch                  38;5;240
 .PCH                  38;5;240
 .pyc                  38;5;240
