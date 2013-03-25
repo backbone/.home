@@ -107,3 +107,7 @@ URxvt.perl-lib:         .urxvt/perl/
 ! URxvt*perl-ext: tabbed,clipboard-osc,confirm-paste,matcher,option-popup,overlay-osc,readline,remote-clipboard,searchable-scrollback,selection,selection-  autotransform,selection-pastbin,selection-popup,xim-onthespot
 !URxvt.perl-ext-common:  default,tabbedex,matcher,url-select,clipboard-osc
 URxvt*perl-ext: default,tabbedex,matcher,url-select,clipboard-osc,searchable-scrollback
+
+! Fixes for keys (Home, End, etc...)
+URxvt*keysym.Home: \033[1~
+URxvt*keysym.End: \033[4~
