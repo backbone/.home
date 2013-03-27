@@ -30,11 +30,11 @@ URxvt.cursorBlink:      false
 
 ! Псевдопрозрачность - в кач-ве фона
 ! поставить обои рабочего стола
-!URxvt*transparent:     true
+URxvt*transparent:     false
 ! Яркость прозрачного фона (-100 .. 100)
-!URxvt*shading:         20
+URxvt*shading:         0
 ! Та же псевдопрозрачность, без настройки яркости
-!URxvt.inheritPixmap:     true
+URxvt.inheritPixmap:     false
 ! Цвет окрашивания прозрачного фона
 !URxvt*tintColor:       #558888
 
