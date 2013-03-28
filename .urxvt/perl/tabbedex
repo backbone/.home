@@ -205,11 +205,6 @@ sub new_tab {
             if defined $value;
       }
 
-      foreach my $opt (keys %urxvt::OPTION) {
-          my $value = $self->{option}{$opt};
-          $term->option($urxvt::OPTION{$opt}, $value);
-      }
-
       $term->resource (perl_ext_2 => $term->resource ("perl_ext_2") . ",-tabbedex");
    };
 
