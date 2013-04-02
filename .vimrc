@@ -2,11 +2,11 @@
 
 " общие настройки
 syntax on             " включить подсветку синтаксиса
-set ts=8              " у меня табуляция (tabstop) 4 символа
-set tabstop=8
-set shiftwidth=2
-set textwidth=8
-set tw=159
+set ts=4              " у меня табуляция (tabstop) 4 символа
+set tabstop=4
+set shiftwidth=4
+set textwidth=79
+set tw=79
 set expandtab
 set autoindent
 set copyindent
