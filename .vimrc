@@ -2,11 +2,11 @@
 
 " общие настройки
 syntax on             " включить подсветку синтаксиса
-set ts=8              " у меня табуляция (tabstop) 4 символа
-set tabstop=8
-set shiftwidth=2
-set textwidth=8
-set tw=159
+set ts=4              " у меня табуляция (tabstop) 4 символа
+set tabstop=4
+set shiftwidth=4
+set textwidth=79
+set tw=79
 set expandtab
 set autoindent
 set copyindent
@@ -150,10 +150,10 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
-Bundle 'vim-tags'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
+Bundle 'vim-tags'
 " non github repos
 Bundle 'git://git.wincent.com/command-t.git'
 " ...
