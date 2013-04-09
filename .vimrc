@@ -24,14 +24,23 @@ function! GnuIndent()
     setlocal cinoptions=>4,n-2,{2,^-2,:2,=2,g0,h2,p5,t0,+2,(0,u0,w1,m1
     setlocal shiftwidth=2
     setlocal tabstop=8
-endfunction 
+endfunction
+
+" Setup for the CPP coding format standard
+function! CppIndent()
+    setlocal shiftwidth=8
+    setlocal tabstop=8
+    setlocal noexpandtab
+endfunction
+
 
 " Setup for the Vala coding format standard
 function! ValaIndent()
     setlocal shiftwidth=4
 endfunction
 
-au FileType c,cpp call GnuIndent()
+au FileType c call GnuIndent()
+au FileType cpp call CppIndent()
 au FileType vala,vapi call ValaIndent()
 
 " отключение бэкапов
