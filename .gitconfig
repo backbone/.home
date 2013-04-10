@@ -50,5 +50,15 @@
 
 [core]
 	quotepath = false
+
 [push]
 	default = matching
+
+[difftool]
+	prompt = false
+
+[diff]
+	tool = vimdiff
+
+[mergetool "vimdiff"]
+	keepBackup = false
