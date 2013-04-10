@@ -216,3 +216,14 @@ let g:tagbar_ctags_bin = "anjuta-tags"
 
 " ----- NERDTree ------
 nmap <F12> :NERDTreeToggle<CR> 
+
+" ------- VimDiff -------
+if &diff
+  let mapleader = ","
+  map dp1 :diffput LOCAL<CR>
+  map dp2 :diffput BASE<CR>
+  map dp3 :diffput REMOTE<CR>
+  map do1 :diffget LOCAL<CR>
+  map do2 :diffget BASE<CR>
+  map do3 :diffget REMOTE<CR>
+endif
