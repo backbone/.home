@@ -69,7 +69,7 @@ URxvt.pastableTabs:     true
 
 !=== НАСТРОЙКИ ОБРАБОТКИ ССЫЛОК ===
 ! Внешняя программа для открытия ссылок
-URxvt.url-launcher:      firefox
+URxvt.url-launcher:      firefox-bin
 ! Кнопка мыши, которая открывает ссылку
 URxvt.matcher.button:   1
 ! Горячие клавиши для выделения ссылок (Alt+U),
