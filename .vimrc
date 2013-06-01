@@ -167,6 +167,7 @@ Bundle 'vim-tags'
 Bundle 'git://git.wincent.com/command-t.git'
 " ...
 Bundle 'majutsushi/tagbar'
+Bundle 'vim-startify'
 
 filetype plugin indent on     " required!
 "
