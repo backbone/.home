@@ -10,12 +10,12 @@ set tw=79
 set expandtab
 set autoindent
 set copyindent
-set background=dark   " весьма важная штука! :)
+"set background=dark   " весьма важная штука! :)
 set lbr
 set showcmd
 set nocompatible      " обойдёмся без стандартного vi
 set backspace=indent,eol,start
-color desert
+color backbone
 set number
 nmap <F6> :set invlist<cr>
 
