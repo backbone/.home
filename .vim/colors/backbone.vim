@@ -21,6 +21,7 @@ endif
 let colors_name = "default"
 
 hi Comment term=bold ctermfg=darkcyan guifg=Red
-
+hi Folded	ctermfg=darkgrey ctermbg=NONE
+hi FoldColumn	ctermfg=darkgrey ctermbg=NONE
 
 " vim: sw=2
