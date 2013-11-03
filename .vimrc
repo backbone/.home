@@ -169,6 +169,7 @@ Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'majutsushi/tagbar'
 Bundle 'vim-startify'
 Bundle 'clang-complete'
+Bundle 'scrooloose/nerdcommenter'
 
 filetype plugin indent on     " required!
 "
