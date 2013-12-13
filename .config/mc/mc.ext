@@ -461,7 +461,7 @@ regex/\.([Vv][Ss][Dd])$
 
 regex/\.([wW][aA][vV]|[sS][nN][dD]|[vV][oO][cC]|[aA][uU]|[sS][mM][pP]|[aA][iI][fF][fF]|[sS][nN][dD])$
 #       Open=if [ "$DISPLAY" = "" ]; then play %f; else (xmms %f >/dev/null 2>&1 &); fi
-	Open=mplayer2 %f
+	Open=mpv %f
 
 regex/\.([mM][oO][dD]|[sS]3[mM]|[xX][mM]|[iI][tT]|[mM][tT][mM]|669|[sS][tT][mM]|[uU][lL][tT]|[fF][aA][rR])$
        Open=mikmod %f
@@ -469,16 +469,16 @@ regex/\.([mM][oO][dD]|[sS]3[mM]|[xX][mM]|[iI][tT]|[mM][tT][mM]|669|[sS][tT][mM]|
 
 regex/\.([wW][aA][wW]22)$
 #       Open=vplay -s 22 %f
-	Open=mplayer2 %f
+	Open=mpv %f
 
 regex/\.([mM][pP]3)$
 #	Open=if [ "$DISPLAY" = "" ]; then mpg123 %f; else (xmms %f >/dev/null 2>&1 &); fi
-	Open=mplayer2 %f
+	Open=mpv %f
 	View=%view{ascii} mpg123 -vtn1 %f 2>&1 | sed -n '/^Title/,/^Comment/p;/^MPEG/,/^Audio/p'
 
 regex/\.([oO][gG][gG|aA|vV|xX])$
 #	Open=if [ "$DISPLAY" = "" ]; then ogg123 %f; else (xmms %f >/dev/null 2>&1 &); fi
-	Open=mplayer2 %f
+	Open=mpv %f
 	View=%view{ascii} ogginfo %s
 
 regex/\.([sS][pP][xX]|[fF][lL][aA][cC])$
@@ -488,15 +488,15 @@ regex/\.([mM][iI][dD][iI]?|[rR][mM][iI][dD]?)$
 	Open=timidity %f
 
 regex/\.([wW][mM][aA])$
-#	Open=mplayer2 -vo null %f
-	Open=mplayer2 %f
-	View=%view{ascii} mplayer2 -quiet -slave -frames 0 -vo null -ao null -identify %f 2>/dev/null | tail +13 || file %f
+#	Open=mpv -vo null %f
+	Open=mpv %f
+	View=%view{ascii} mpv -quiet -slave -frames 0 -vo null -ao null -identify %f 2>/dev/null | tail +13 || file %f
 
 
 ### Play lists ###
 
 regex/\.([mM]3[uU]|[pP][lL][sS])$
-	Open=if [ -z "$DISPLAY" ]; then mplayer2 -vo null -playlist %f; else (xmms -p %f >/dev/null 2>&1 &); fi
+	Open=if [ -z "$DISPLAY" ]; then mpv -vo null -playlist %f; else (xmms -p %f >/dev/null 2>&1 &); fi
 
 
 ### Video ###
@@ -541,8 +541,8 @@ regex/\.([3][Gg][Pp])$
 	Include=video
 
 include/video
-	Open=(mplayer2 %f &>/dev/null)&
-	Edit=mplayer2 -fs %f
+	Open=(mpv %f &>/dev/null)&
+	Edit=mpv -fs %f
 	#Edit=echo %p
 	#View=echo "%d/%p"|cut -d# -f2|sed s/:/':\/\/'/
 	#Open=(gtv %f >/dev/null 2>&1 &)
