@@ -1,7 +1,7 @@
 URxvt.colorBD: #CC5533
 URxvt*background: #000000
 URxvt*foreground: #C0C0C0
-! URxvt.color0: rgb:46/70/73
+URxvt.color0: rgb:01/01/01
 URxvt.color1: rgb:aa/00/00
 URxvt.color2: rgb:aa/aa/00
 URxvt.color3: rgb:77/77/00
