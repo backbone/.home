@@ -196,7 +196,7 @@ color_profile_screen_file_1:
 external_1: "The Gimp" "gimp -n %f"
 external_2: "XV" "xv %f"
 external_3: "Xpaint" "xpaint %f"
-external_4: "" ""
+external_4: "Awesome BG" "ln -sf %f ~/.config/awesome/wallpaper.slink && ~/.config/awesome/set_wall.sh ~/.config/awesome/wallpaper.slink"
 external_5: "" ""
 external_6: "" ""
 external_7: "" ""
