@@ -1,0 +1,4 @@
+# Write your default config options here!
+[default]
+stop-screensaver="yes"
+#heartbeat-cmd="xscreensaver-command -deactivate &"

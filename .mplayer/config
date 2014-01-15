@@ -1,0 +1,19 @@
+[default]
+# Write your default config options here!
+#heartbeat-cmd="(nice -n 20 /usr/bin/xscreensaver-command -deactivate >/dev/null 2>&1)&"
+#heartbeat-cmd="xset dpms force on"
+heartbeat-cmd="xscreensaver-command -deactivate"
+#stop-xscreensaver=no
+audiofile-cache=5000
+cache=16000
+cache-min=30
+cache-seek-min=30
+#af=equalizer=5:5:5:0:0:0:-2:-2:-2
+
+
+[gnome-mplayer]
+#vo=vdpau
+ao=alsa
+alang=Russian,rus,ru
+slang=Russian,rus,ru
+msglevel=all=5
