@@ -193,7 +193,7 @@ programs:								      \
 -				metaballs -root				    \n\
 - GL: 				mirrorblob -root			    \n\
 -				piecewise -root				    \n\
-  GL: 				polytopes -root				    \n\
+- GL: 				polytopes -root				    \n\
 -				pong -root				    \n\
 				popsquares -root			    \n\
   GL: 				surfaces -root				    \n\
