@@ -33,6 +33,12 @@ function! CppIndent()
     setlocal noexpandtab
 endfunction
 
+" Setup for the Sh coding format standard
+function! ShIndent()
+    setlocal shiftwidth=4
+    setlocal tabstop=4
+    setlocal noexpandtab
+endfunction
 
 " Setup for the Vala coding format standard
 function! ValaIndent()
@@ -42,6 +48,7 @@ endfunction
 au FileType c call GnuIndent()
 au FileType cpp call CppIndent()
 au FileType vala,vapi call ValaIndent()
+au FileType sh call ShIndent()
 
 " отключение бэкапов
 set nobackup
