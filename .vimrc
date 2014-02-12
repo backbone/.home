@@ -43,6 +43,8 @@ endfunction
 " Setup for the Vala coding format standard
 function! ValaIndent()
     setlocal shiftwidth=4
+    setlocal tabstop=4
+    setlocal noexpandtab
 endfunction
 
 au FileType c call GnuIndent()
