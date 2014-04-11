@@ -198,7 +198,7 @@ filetype plugin on
 let g:clang_library_path="/usr/lib/llvm"
 let g:clang_user_options='|| exit 0'
 let g:clang_complete_auto = 1
-let g:clang_complete_copen = 1
+let g:clang_complete_copen = 0
 
 " ------- Vala --------
 " Disable valadoc syntax highlight
