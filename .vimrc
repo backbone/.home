@@ -7,6 +7,7 @@ set tabstop=4
 set shiftwidth=4
 set textwidth=79
 set tw=79
+set colorcolumn=80,120,160
 set expandtab
 set autoindent
 set copyindent
@@ -31,6 +32,9 @@ function! CppIndent()
     setlocal shiftwidth=4
     setlocal tabstop=4
     setlocal noexpandtab
+    set textwidth=119
+    set tw=119
+    set colorcolumn=120,160
 endfunction
 
 " Setup for the Sh coding format standard
@@ -45,6 +49,9 @@ function! ValaIndent()
     setlocal shiftwidth=4
     setlocal tabstop=4
     setlocal noexpandtab
+    set textwidth=119
+    set tw=119
+    set colorcolumn=120,160
 endfunction
 
 au FileType c call GnuIndent()
