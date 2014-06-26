@@ -19,7 +19,7 @@ set backspace=indent,eol,start
 color backbone
 set number
 nmap <F6> :set invlist<cr>
-set breakindent " https://www.linux.org.ru/forum/general/10615635?lastmod=1403800233259
+" set breakindent " https://www.linux.org.ru/forum/general/10615635?lastmod=1403800233259
 
 " Setup for the GNU coding format standard
 function! GnuIndent()
