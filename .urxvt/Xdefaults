@@ -98,7 +98,7 @@ URxvt.utmpInhibit:      true
 
 !=== НАСТРОЙКИ РАСШИРЕНИЙ ===
 ! Путь для поиска пользовательских расширений
-URxvt.perl-lib:         .urxvt/perl/
+! URxvt.perl-lib:         .urxvt/perl/
 ! Загружаемые по умолчанию расширения
 ! Основные; расширенные табы (без кнопки NEW, можно устанавливать
 ! заголовок окна: https://github.com/stepb/urxvt-tabbedex);
