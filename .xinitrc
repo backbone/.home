@@ -1,6 +1,9 @@
-DEFAULT_SESSION=urxvt
+DEFAULT_SESSION=awesome
 
 case $1 in
+awesome)
+	exec awesome
+	;;
 fvwm-crystal)
 	exec fvwm-crystal
 	;;
