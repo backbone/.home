@@ -1,6 +1,9 @@
 DEFAULT_SESSION=awesome
 
 case $1 in
+urxvt)
+	exec urxvt
+	;;
 awesome)
 	exec awesome
 	;;
