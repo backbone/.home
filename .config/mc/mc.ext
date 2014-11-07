@@ -619,6 +619,10 @@ regex/\.(odt|ott|sxw|stw|ods|ots|sxc|stc|odp|otp|sxi|sti|odg|otg|sxd|std|odb|odf
 regex/\.([Pp][Pp][Tt])$
 	Open=(loimpress %f >/dev/null 2>&1)&
 
+# MS Office Word documents
+regex/\.([Dd][Oo][Cc][Xx])$
+	Open=(loimpress %f >/dev/null 2>&1)&
+
 # AbiWord
 shell/.abw
 	Open=(abiword %f &)
