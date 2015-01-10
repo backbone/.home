@@ -62,3 +62,6 @@
 
 [mergetool "vimdiff"]
 	keepBackup = false
+
+[http]
+	sslverify = false
