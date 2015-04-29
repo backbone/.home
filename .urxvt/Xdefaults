@@ -42,7 +42,7 @@ URxvt.inheritPixmap:     false
 !URxvt*iconFile: /usr/share/pixmaps/gnome-terminal.xpm
 
 ! Настройки шрифтов
-URxvt*font:-xos4-terminus-medium-r-normal--12-*-*-*-*-*-u
+URxvt*font:-xos4-terminus-medium-r-normal--12-*-*-*-*-*-*
 ! Горячие клавиши для изменения размера шрифта "на лету"
 ! (Ctrl-1 - норма, Ctrl-2 - увеличить до 24)
 URxvt.keysym.C-1: command:\033]710;-xos4-terminus-medium-r-normal--12-*-*-*-*-*-u\007\033]711;-xos4-terminus-bold-r-normal--12-*-*-*-*-*-u\007
