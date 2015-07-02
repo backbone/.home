@@ -1,11 +1,11 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.15 for kolan on Mon Feb  6 13:30:55 2012.
+# Written by xscreensaver-demo 5.32 for kolan on Thu Jul  2 19:36:56 2015.
 # http://www.jwz.org/xscreensaver/
 
-timeout:	0:05:00
+timeout:	0:16:00
 cycle:		0:01:00
 lock:		True
-lockTimeout:	0:16:00
+lockTimeout:	0:32:00
 passwdTimeout:	0:00:30
 visualID:	default
 installColormap:    True
@@ -254,4 +254,5 @@ GetViewPortIsFullOfLies:False
 procInterrupts:	True
 xinputExtensionDev: False
 overlayStderr:	True
+authWarningSlack:   0
 
