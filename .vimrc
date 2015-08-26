@@ -103,12 +103,12 @@ imap <F10> <esc>:q!<cr>i
 :set tabpagemax=99
 nmap <C-a> :tabnew<cr>
 imap <C-a> <ESC>:tabnew<cr>
-map <C-x> :tabnext<cr>
-nmap <C-x> :tabnext<cr>
-imap <C-x> :tabnext<cr>
-map <C-z> :tabprev<cr>
-nmap <C-z> :tabprev<cr>
-imap <C-z> :tabprev<cr>
+map <C-x>n :tabnext<cr>
+nmap <C-x>n :tabnext<cr>
+imap <C-x>n :tabnext<cr>
+map <C-x>p :tabprev<cr>
+nmap <C-x>p :tabprev<cr>
+imap <C-x>p :tabprev<cr>
 
 " кириллица
 set encoding=utf-8
