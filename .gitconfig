@@ -38,6 +38,7 @@
 	strip = reset --hard
 	branches = branch -a
 	pull = fetch
+	glog = log --graph --stat --decorate
 
 [instaweb]
 	local = true
