@@ -5,3 +5,9 @@ source! /home/kolan/.vimperatorrc.local
 " vim: set ft=vimperator:
 map <C-S-p> :tabm -1<CR>
 map <C-S-n> :tabm +1<CR>
+
+" Valadoc.org: disable 'new window' in 'edit mode'
+:imap <C-n> <Esc>gt<Esc>
+:imap <C-S-n> <Esc>gt<Esc>
+:imap <C-p> <Esc>gT<Esc>
+:imap <C-S-p> <Esc>gT<Esc>
