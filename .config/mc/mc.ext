@@ -471,7 +471,7 @@ regex/\.([wW][aA][wW]22)$
 #       Open=vplay -s 22 %f
 	Open=mpv %f
 
-regex/\.([mM][pP]3)$
+regex/\.([mM][pP]3|[mM]4[Aa])$
 #	Open=if [ "$DISPLAY" = "" ]; then mpg123 %f; else (xmms %f >/dev/null 2>&1 &); fi
 	Open=mpv %f
 	View=%view{ascii} mpg123 -vtn1 %f 2>&1 | sed -n '/^Title/,/^Comment/p;/^MPEG/,/^Audio/p'
