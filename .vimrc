@@ -188,6 +188,17 @@ Bundle 'vim-startify'
 Bundle 'clang-complete'
 Bundle 'scrooloose/nerdcommenter'
 
+Bundle 'Yggdroot/indentLine'
+set list lcs=tab:\.\ 
+" Vim
+let g:indentLine_color_term = 239
+"GVim
+" let g:indentLine_color_gui = '#A4E57E'
+" none X terminal
+" let g:indentLine_color_tty_light = 4 " (default: 4)
+" let g:indentLine_color_dark = 2 " (default: 2)
+
+
 filetype plugin indent on     " required!
 "
 " Brief help
