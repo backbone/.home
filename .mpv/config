@@ -5,6 +5,7 @@ heartbeat-cmd="xscreensaver-command -deactivate &"
 
 save-position-on-quit=yes
 subcp=enca:ru:utf8
-#hwdec=vdpau
-hwdec=vaapi
+#hwdec=vaapi
+hwdec=vdpau
 fullscreen=yes
+vo=vaapi
