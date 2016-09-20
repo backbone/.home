@@ -373,8 +373,8 @@ sub on_init {
    defined $bg    or $bg    = 0;
    defined $tabfg or $tabfg = 0;
    defined $tabbg or $tabbg = 1;
-   defined $titfg or $titfg = 2;
-   defined $titbg or $titbg = 0;
+   defined $titfg or $titfg = 4;
+   defined $titbg or $titbg = 3;
 
    $self->{rs_tabbar} = urxvt::SET_COLOR (urxvt::DEFAULT_RSTYLE, $fg    + 2, $bg    + 2);
    $self->{rs_tab}    = urxvt::SET_COLOR (urxvt::DEFAULT_RSTYLE, $tabfg + 2, $tabbg + 2);

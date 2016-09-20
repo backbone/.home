@@ -1,109 +1,13 @@
-URxvt.colorBD: #CC5533
-URxvt*background: #000000
-URxvt*foreground: #C0C0C0
-URxvt.color0: rgb:01/01/01
-URxvt.color1: rgb:aa/00/00
-URxvt.color2: rgb:aa/aa/00
-URxvt.color3: rgb:77/77/00
-URxvt.color4: rgb:00/00/aa
-URxvt.color5: rgb:aa/00/aa
-URxvt.color6: rgb:00/aa/aa
-URxvt.color7: rgb:aa/aa/aa
-URxvt.color8: rgb:55/55/55
-URxvt.color9: rgb:ff/55/55
-URxvt.color10: rgb:33/bb/33
-URxvt.color11: rgb:ff/ff/55
-URxvt.color12: rgb:77/77/ff
-URxvt.color13: rgb:ff/55/ff
-URxvt.color14: rgb:55/ff/ff
-URxvt.color15: rgb:ff/ff/ff
-
-! Имя терминала
-URxvt*termName: xterm-256color
-
-! Будет ли курсор мигать
-URxvt.cursorBlink:      false
-! Цвет курсора
-!URxvt.cursorColor:     yellow
-! Цвет текста, находящегося под курсором
-!URxvt.cursorColor2:     red
-
-! Псевдопрозрачность - в кач-ве фона
-! поставить обои рабочего стола
-URxvt*transparent:     false
-! Яркость прозрачного фона (-100 .. 100)
-URxvt*shading:         0
-! Та же псевдопрозрачность, без настройки яркости
-URxvt.inheritPixmap:     false
-! Цвет окрашивания прозрачного фона
-!URxvt*tintColor:       #558888
-
-! Иконка окна терминала
-!URxvt*iconFile: /usr/share/pixmaps/gnome-terminal.xpm
-
-! Настройки шрифтов
+URxvt.cursorBlink:      true
 URxvt*font:-xos4-terminus-medium-r-normal--12-*-*-*-*-*-*
-! Горячие клавиши для изменения размера шрифта "на лету"
-! (Ctrl-1 - норма, Ctrl-2 - увеличить до 24)
-URxvt.keysym.C-1: command:\033]710;-xos4-terminus-medium-r-normal--12-*-*-*-*-*-u\007\033]711;-xos4-terminus-bold-r-normal--12-*-*-*-*-*-u\007
-URxvt.keysym.C-2: command:\033]710;-xos4-terminus-medium-r-normal--14-*-*-*-*-*-u\007\033]711;-xos4-terminus-bold-r-normal--14-*-*-*-*-*-u\007
-URxvt.keysym.C-3: command:\033]710;-xos4-terminus-medium-r-normal--16-*-*-*-*-*-u\007\033]711;-xos4-terminus-bold-r-normal--16-*-*-*-*-*-u\007
-
-! Цвета в man-страницах
-URxvt.colorMode:         on
-URxvt.boldColors:        on
-URxvt.dynamicColors:     on
-URxvt.colorULMode:       on
-URxvt.underLine:         off
-URxvt.colorBDMode:       on
-!URxvt.colorBD:           cyan
-
-! Скроллинг + скроллбар
-URxvt*scrollBar:        true
-URxvt*scrollBar_right:  true
 URxvt*scrollstyle:      plain
-
-! Отображать символ табуляции как один широкий символ
-! (иначе - как перемещения курсора)
-URxvt.pastableTabs:     true
-
-!=== НАСТРОЙКИ ОБРАБОТКИ ССЫЛОК ===
-! Внешняя программа для открытия ссылок
 URxvt.url-launcher:      firefox
-! Кнопка мыши, которая открывает ссылку
 URxvt.matcher.button:   1
-! Горячие клавиши для выделения ссылок (Alt+U),
-! после выделения ссылка открывается по Enter
-!URxvt.keysym.M-u:       perl:url-select:select_next
-! Выделять ссылки голубым цветом
-URxvt.colorUL:          #86a2be
-! Подчеркивать ссылки
-URxvt.underlineURLs:    true
-!URxvt.underlineColor:   yellow
-
-!=== НАСТРОЙКИ ФУНКЦИОНАЛА ===
-! Сколько строк хранить в памяти
-URxvt*saveLines:        5000
-! Настройки табов
-URxvt.tabbed.new-button:    no
-URxvt.tabbed.tabbar-fg:     7
-URxvt.tabbed.tabbar-bg:     0
-URxvt.tabbed.tab-fg:        0
+URxvt.colorUL:          blue
+URxvt*saveLines:        4096
+URxvt.tabbed.tabbar-fg:     0
+URxvt.tabbed.tabbar-bg:     3
+URxvt.tabbed.tab-fg:        1
 URxvt.tabbed.tab-bg:        7
-! Оболочка
 URxvt.geometry:         96x32
-URxvt.loginShell:       false
-URxvt.meta:             ignore
-URxvt.utmpInhibit:      true
-
-!=== НАСТРОЙКИ РАСШИРЕНИЙ ===
-! Путь для поиска пользовательских расширений
-! URxvt.perl-lib:         .urxvt/perl/
-! Загружаемые по умолчанию расширения
-! Основные; расширенные табы (без кнопки NEW, можно устанавливать
-! заголовок окна: https://github.com/stepb/urxvt-tabbedex);
-! регэкспы для выделения ссылок в тексте; выбор ссылок горячими
-! клавишами); копирование в буфер обмена
-! URxvt*perl-ext: tabbed,clipboard-osc,confirm-paste,matcher,option-popup,overlay-osc,readline,remote-clipboard,searchable-scrollback,selection,selection-  autotransform,selection-pastbin,selection-popup,xim-onthespot
-!URxvt.perl-ext-common:  default,tabbedex,matcher,url-select,clipboard-osc
-URxvt*perl-ext: default,tabbedex,matcher,url-select,clipboard-osc,searchable-scrollback
+URxvt*perl-ext: tabbedex,matcher
