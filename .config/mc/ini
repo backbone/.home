@@ -69,7 +69,6 @@ editor_simple_statusbar=0
 editor_check_new_line=0
 editor_show_right_margin=0
 nice_rotating_dash=1
-horizontal_split=0
 mcview_remember_file_position=0
 auto_fill_mkdir_name=1
 copymove_persistent_attr=1
@@ -92,7 +91,7 @@ permission_mode=0
 quick_search_case_sensitive=2
 ignore_ftp_chattr_errors=true
 keymap=mc.keymap
-skin=klmn0
+skin=sand256
 
 panel_scroll_pages=1
 auto_save_setup_panels=1
@@ -102,9 +101,17 @@ filepos_max_saved_entries=1024
 preallocate_space=0
 editor_group_undo=0
 
+editor_cursor_after_inserted_block=0
+
+editor_ask_filename_before_edit=0
+editor_filesize_threshold=64M
+
+editor_drop_selection_on_copy=1
+editor_stop_format_chars=-+*\\,.;:&>
+
+editor_state_full_filename=0
+
 [Layout]
-equal_split=1
-first_panel_size=142
 message_visible=1
 keybar_visible=0
 xterm_title=1
@@ -116,6 +123,12 @@ free_space=1
 
 permission_mode=0
 filetype_mode=1
+
+horizontal_split=0
+vertical_equal=1
+left_panel_size=52
+horizontal_equal=1
+top_panel_size=29
 
 [Misc]
 timeformat_recent=%b %e %H:%M
@@ -143,6 +156,12 @@ linux=
 
 screen.rxvt=
 
+xterm-256color=
+
+screen-256color=
+
+screen-256color-bce=
+
 [Panels]
 kilobyte_si=false
 mix_all_files=false
@@ -164,6 +183,11 @@ simple_swap=false
 
 show_mini_info=true
 torben_fj_mode=false
+
+select_flags=6
+
+[HotlistConfig]
+expanded_view_of_groups=0
 
 [Panelize]
 Найти корректуры, отвергнутые командой patch=find . -name \\*.rej -print
