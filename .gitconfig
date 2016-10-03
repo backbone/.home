@@ -24,6 +24,9 @@
 	changed = green
 	untracked = cyan
 
+[color "decorate"]
+    tag = yellow
+
 [alias]
 	unstage = reset HEAD --
 	st = status
