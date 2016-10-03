@@ -25,7 +25,7 @@
 	untracked = cyan
 
 [color "decorate"]
-    tag = yellow
+    tag = magenta
 
 [alias]
 	unstage = reset HEAD --
