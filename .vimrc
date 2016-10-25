@@ -8,7 +8,7 @@ set shiftwidth=4
 set textwidth=79
 set tw=79
 set colorcolumn=80,120,160
-set expandtab
+"set expandtab
 set autoindent
 set copyindent
 "set background=dark   " весьма важная штука! :)
