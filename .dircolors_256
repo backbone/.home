@@ -755,8 +755,8 @@ EXEC                  01;32                 # This is for files with execute per
 .SWF                  38;5;139 # Adobe Flesh
 .torrent              38;5;112
 .TORRENT              38;5;112
-.vi                   38;5;193 # LabVIEW file
-.VI                   38;5;193 # LabVIEW file
+.vi                   38;5;165 # LabVIEW file
+.VI                   38;5;165 # LabVIEW file
 .xpi                  38;5;167
 .XPI                  38;5;167
 # }}}
