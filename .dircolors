@@ -739,10 +739,10 @@ EXEC                  01;32                 # This is for files with execute per
 .JAM                  01;32    # Java executable
 .jar                  01;32    # Java executable
 .JAR                  01;32    # Java executable
-.lvlib                01;35    # LabVIEW file
-.LVLIB                01;35    # LabVIEW file
-.lvproj               01;35    # LabVIEW file
-.LVPROJ               01;35    # LabVIEW file
+.lvlib                02;35    # LabVIEW file
+.LVLIB                02;35    # LabVIEW file
+.lvproj               02;35    # LabVIEW file
+.LVPROJ               02;35    # LabVIEW file
 .msi                  01;32
 .MSI                  01;32
 .pid                  31
