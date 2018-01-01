@@ -2,7 +2,7 @@
 username = Kolan Sh <backbone@backbone.ws>
 
 [hostfingerprints]
-bitbucket.org=45:ad:ae:1a:cf:0e:73:47:06:07:e0:88:f5:cc:10:e5:fa:1c:f7:99
+bitbucket.org=3f:d3:c5:17:23:3c:cd:f5:2d:17:76:06:93:7e:ee:97:42:21:14:aa
 hg.backbone.ws=1d:5d:e2:95:c6:ee:1a:63:9a:9b:09:79:f6:30:a9:2a:50:7d:4e:09
 hg.insysltd.ru=ec:ff:06:cf:59:88:ae:58:eb:f4:79:30:56:f7:36:c2:dd:52:a9:41
 hg.insysltd.org=ec:ff:06:cf:59:88:ae:58:eb:f4:79:30:56:f7:36:c2:dd:52:a9:41
@@ -24,12 +24,12 @@ opts.cdiff = -uprN
 
 [extensions]
 duckcharset = ~/.hgext/duckcharset/hgext/duckcharset.py
-onsub= ~/.hgext/onsub/onsub.py
-compass = ~/.hgext/compass/compass.py
-hggit = ~/.hgext/hg-git/hggit
-hgshelve = ~/.hgext/hgshelve/hgshelve.py
-histedit = ~/.hgext/histedit/hg_histedit.py
-hgext.hgshelve=
+#onsub= ~/.hgext/onsub/onsub.py
+#compass = ~/.hgext/compass/compass.py
+#hggit = ~/.hgext/hg-git/hggit
+#hgshelve = ~/.hgext/hgshelve/hgshelve.py
+#histedit = ~/.hgext/histedit/hg_histedit.py
+#hgext.hgshelve=
 # fixcase = ~/.hgext/fixcase/fixcase.py
 hgext.bookmarks =
 eol =
