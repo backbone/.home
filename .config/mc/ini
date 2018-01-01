@@ -92,7 +92,7 @@ permission_mode=0
 quick_search_case_sensitive=2
 ignore_ftp_chattr_errors=true
 keymap=mc.keymap
-skin=klmn0
+skin=sand256
 
 panel_scroll_pages=1
 auto_save_setup_panels=1
