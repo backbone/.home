@@ -2,3 +2,11 @@
   box-shadow: none;
   margin: 0;
 }
+.scrollbar.vertical slider,
+scrollbar.vertical slider {
+min-width: 12px;
+}
+.scrollbar.horizontal slider,
+scrollbar.horizontal slider {
+min-height: 12px;
+}
