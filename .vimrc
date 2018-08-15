@@ -22,7 +22,7 @@ nmap <F6> :set invlist<cr>
 " set breakindent " https://www.linux.org.ru/forum/general/10615635?lastmod=1403800233259
 
 " https://ru.wikibooks.org/wiki/Vim#%D0%A1%D0%BF%D0%BE%D1%81%D0%BE%D0%B1_2
-set langmap=ёйцукенгшщзхъфывапролджэячсмитьбю;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.,ЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
+set langmap=ёйцукенгшщзхъфывапролджэячсмитьбю;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.,ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>
 
 " Setup for the GNU coding format standard
 function! GnuIndent()
