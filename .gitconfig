@@ -15,9 +15,9 @@
 
 [color "diff"]
 	meta = yellow
-	frag = magenta bold
-	old = red bold
-	new = green bold
+#	frag = magenta bold
+#	old = red bold
+#	new = green bold
 
 [color "status"]
 	added = yellow
@@ -28,19 +28,10 @@
     tag = magenta
 
 [alias]
-	unstage = reset HEAD --
 	st = status
 	s = status -uno
 	ci = commit
-	di = diff -b
 	co = checkout
-	up = checkout
-	update = checkout
-	l = log
-	hgrevert = checkout
-	strip = reset --hard
-	branches = branch -a
-	pull = fetch
 	glog = log --graph --stat --decorate
 
 [instaweb]
@@ -69,3 +60,6 @@
 
 [http]
 	sslverify = false
+
+[branch]
+	autoSetupMerge = always
