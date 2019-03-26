@@ -58,8 +58,8 @@
 [mergetool "vimdiff"]
 	keepBackup = false
 
-[http]
-	sslverify = false
+#[http]
+#	sslverify = false
 
-[branch]
-	autoSetupMerge = always
+#[branch]
+#	autoSetupMerge = always
