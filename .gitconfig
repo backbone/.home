@@ -63,3 +63,5 @@
 
 #[branch]
 #	autoSetupMerge = always
+[pager]
+	branch = false
