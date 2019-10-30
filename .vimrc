@@ -16,6 +16,7 @@ set lbr
 set showcmd
 set nocompatible      " обойдёмся без стандартного vi
 set backspace=indent,eol,start
+set nofixendofline
 color backbone
 set number
 nmap <F6> :set invlist<cr>
