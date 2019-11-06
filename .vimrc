@@ -151,11 +151,24 @@ function! ToggleMyFontSize()
 endfunction
 nnoremap  <silent>  <F12> :call ToggleMyFontSize()<CR>
 
-" теги
-set tags+=./.ctags
-set tags+=~/.big/ctags
-cscope add ./.cscope
-cscope add ~/.big/cscope
+" ctags
+let local_tags = ".ctags"
+let local_path = "/"
+let current_path = getcwd()
+" If the current path is a child of $HOME directory, start from $HOME
+if current_path =~ $HOME
+    let local_path = $HOME . local_path
+    let current_path = substitute(current_path, $HOME, '', "")
+endif
+let path_parts = split(current_path, "/")
+for path_part in path_parts
+    let local_path = local_path . path_part . "/"
+    if filereadable(local_path . local_tags)
+        exe ":set tags+=" . local_path . local_tags
+    endif
+endfor
+unlet local_tags local_path current_path path_parts
+
 map <F4> [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 
 " Foldging
