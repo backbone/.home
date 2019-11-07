@@ -153,7 +153,9 @@ nnoremap  <silent>  <F12> :call ToggleMyFontSize()<CR>
 
 " ctags/cscope
 let local_tags = ".ctags"
+let local_tags2 = "tags"
 let local_cscope = ".cscope.out"
+let local_cscope2 = "cscope.out"
 let local_path = "/"
 let current_path = getcwd()
 " If the current path is a child of $HOME directory, start from $HOME
@@ -167,11 +169,17 @@ for path_part in path_parts
     if filereadable(local_path . local_tags)
         exe ":set tags+=" . local_path . local_tags
     endif
+    if filereadable(local_path . local_tags2)
+        exe ":set tags+=" . local_path . local_tags2
+    endif
     if filereadable(local_path . local_cscope)
         exe "cs add" local_path . local_cscope
     endif
+    if filereadable(local_path . local_cscope2)
+        exe "cs add" local_path . local_cscope2
+    endif
 endfor
-unlet local_tags local_cscope local_path current_path path_parts
+unlet local_tags local_tags2 local_cscope local_cscope2 local_path current_path path_parts
 
 map <F4> [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 
