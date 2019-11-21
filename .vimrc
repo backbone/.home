@@ -185,7 +185,7 @@ map <F4> [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 
 " Foldging
 set foldenable
-set foldmethod=syntax
+" set foldmethod=syntax
 
 " VUNDLE "
 set nocompatible               " be iMproved
