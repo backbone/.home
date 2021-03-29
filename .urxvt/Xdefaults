@@ -1,6 +1,6 @@
 URxvt.cursorBlink:      true
 URxvt*font:-xos4-terminus-medium-r-normal--14-*-*-*-*-*-*
-URxvt*scrollstyle:      plain
+URxvt*scrollstyle:      next
 URxvt.url-launcher:      firefox
 URxvt.matcher.button:   1
 URxvt.colorUL:          blue
