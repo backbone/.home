@@ -15,17 +15,17 @@ URxvt*perl-ext: tabbedex,matcher
 URxvt*color0: #444444
 URxvt*color1: #aa0000
 URxvt*color2: #00aa00
-URxvt*color3: #aaaa00
+URxvt*color3: #999900
 URxvt*color4: #0000aa
-URxvt*color5: #aa00aa
-URxvt*color6: #00aaaa
+URxvt*color5: #990099
+URxvt*color6: #009999
 URxvt*color7: grey
 
 URxvt*color8: #1E2320
-URxvt*color9: #bb0000
-URxvt*color10: #00bb00
+URxvt*color9: #cc0000
+URxvt*color10: #00cc00
 URxvt*color11: #bbbb00
-URxvt*color12: #0000bb
+URxvt*color12: #0000cc
 URxvt*color13: #bb00bb
 URxvt*color14: #00bbbb
 URxvt*color15: white
