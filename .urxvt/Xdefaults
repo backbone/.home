@@ -4,7 +4,7 @@ URxvt*scrollstyle:      next
 URxvt.url-launcher:      firefox
 URxvt.matcher.button:   1
 URxvt.colorUL:          blue
-URxvt*saveLines:        4096
+URxvt*saveLines:        32768
 URxvt.tabbed.tabbar-fg:     7
 URxvt.tabbed.tabbar-bg:     8
 URxvt.tabbed.tab-fg:        0
