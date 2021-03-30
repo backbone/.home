@@ -59,6 +59,8 @@ function! ValaIndent()
     set colorcolumn=120,160
 endfunction
 
+hi ColorColumn ctermbg=lightgrey guibg=lightgrey
+
 au FileType c call GnuIndent()
 au FileType cpp call CppIndent()
 au FileType vala,vapi call ValaIndent()
