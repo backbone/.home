@@ -18,6 +18,10 @@ set nocompatible      " обойдёмся без стандартного vi
 set backspace=indent,eol,start
 set nofixendofline
 colorscheme desert
+hi DiffAdd ctermfg=white
+hi DiffChange ctermfg=white
+hi DiffDelete ctermfg=white
+hi DiffText ctermfg=white
 set number
 nmap <F6> :set invlist<cr>
 " set breakindent " https://www.linux.org.ru/forum/general/10615635?lastmod=1403800233259
