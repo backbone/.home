@@ -444,7 +444,7 @@ regex/\.([Ss][Vv][Gg][Zz])$
 	Include=image
 
 include/image
-	Open=if [ "$DISPLAY" = "" ]; then zgv %f; else (gqview %f >/dev/null 2>&1 &); fi
+	Open=if [ "$DISPLAY" = "" ]; then zgv %f; else (geeqie %f >/dev/null 2>&1 &); fi
 	View=%view{ascii} identify %f
 	#View=%view{ascii} asciiview %f
 	Edit=(gimp %f >/dev/null 2>&1)&
