@@ -1,27 +1,22 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.34 for kolan on Wed Dec 16 15:24:36 2015.
-# http://www.jwz.org/xscreensaver/
+# Written by xscreensaver-settings 6.01 for kolan on Wed Sep 22 19:51:43 2021.
+# https://www.jwz.org/xscreensaver/
 
-timeout:	0:30:00
+timeout:	0:45:00
 cycle:		0:01:00
 lock:		True
-lockTimeout:	0:45:00
+lockTimeout:	2:00:00
 passwdTimeout:	0:00:30
 visualID:	default
 installColormap:    True
 verbose:	False
-timestamp:	True
 splash:		False
 splashDuration:	0:00:05
 demoCommand:	xscreensaver-demo
-prefsCommand:	xscreensaver-demo -prefs
 nice:		10
-memoryLimit:	0
 fade:		True
 unfade:		False
 fadeSeconds:	0:00:03
-fadeTicks:	20
-captureStderr:	True
 ignoreUninstalledPrograms:False
 font:		*-medium-r-*-140-*-m-*
 dpmsEnabled:	True
@@ -42,6 +37,7 @@ textLiteral:	XScreenSaver
 textFile:	/etc/gentoo-release
 textProgram:	fortune
 textURL:	http://planet.gentoo.org/rss20.xml
+dialogTheme:	default
 
 programs:								      \
 				maze -root				    \n\
@@ -258,15 +254,37 @@ programs:								      \
 - GL: 				winduprobot -root			    \n\
 - GL: 				splitflap -root				    \n\
 -				testx11 -root				    \n\
+				scooter -root				    \n\
+  GL: 				cubestack -root				    \n\
+  GL: 				cubetwist -root				    \n\
+  GL: 				discoball -root				    \n\
+  GL: 				dymaxionmap -root			    \n\
+  GL: 				energystream -root			    \n\
+  GL: 				hexstrut -root				    \n\
+  GL: 				hydrostat -root				    \n\
+  GL: 				raverhoop -root				    \n\
+  GL: 				splodesic -root				    \n\
+  GL: 				unicrud -root				    \n\
+  GL: 				esper -root				    \n\
+  GL: 				vigilance -root				    \n\
+  GL: 				crumbler -root				    \n\
+				filmleader -root			    \n\
+				glitchpeg -root				    \n\
+  GL: 				handsy -root				    \n\
+  GL: 				maze3d -root				    \n\
+  GL: 				peepers -root				    \n\
+  GL: 				razzledazzle -root			    \n\
+				vfeedback -root				    \n\
+  GL: 				deepstars -root				    \n\
+  GL: 				gravitywell -root			    \n\
+  GL: 				beats -root				    \n\
+  GL: 				covid19 -root				    \n\
+  GL: 				etruscanvenus -root			    \n\
+  GL: 				gibson -root				    \n\
+  GL: 				headroom -root				    \n\
+  GL: 				sphereeversion -root			    \n\
 
 
-pointerPollTime:    0:00:05
 pointerHysteresis:  10
-windowCreationTimeout:0:00:30
-initialDelay:	0:00:00
-GetViewPortIsFullOfLies:False
-procInterrupts:	True
-xinputExtensionDev: False
-overlayStderr:	True
 authWarningSlack:   0
 
