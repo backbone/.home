@@ -29,3 +29,5 @@ URxvt*color12: #0000cc
 URxvt*color13: #bb00bb
 URxvt*color14: #00bbbb
 URxvt*color15: white
+
+Xcursor.size: 24
