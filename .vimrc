@@ -6,7 +6,7 @@ set ts=4              " у меня табуляция (tabstop) 4 символ�
 set tabstop=4
 set shiftwidth=4
 set textwidth=79
-set tw=79
+set tw=159
 set colorcolumn=80,120,160
 "set expandtab
 set autoindent
