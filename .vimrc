@@ -17,7 +17,7 @@ set showcmd
 set nocompatible      " обойдёмся без стандартного vi
 set backspace=indent,eol,start
 set nofixendofline
-colorscheme shine
+colorscheme default
 hi DiffAdd ctermfg=white
 hi DiffChange ctermfg=white
 hi DiffDelete ctermfg=white
