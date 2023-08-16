@@ -17,7 +17,7 @@ set showcmd
 set nocompatible      " обойдёмся без стандартного vi
 set backspace=indent,eol,start
 set nofixendofline
-colorscheme shine
+colorscheme default
 hi DiffAdd ctermfg=white
 hi DiffChange ctermfg=white
 hi DiffDelete ctermfg=white
@@ -38,9 +38,9 @@ endfunction
 
 " Setup for the CPP coding format standard
 function! CppIndent()
-    setlocal shiftwidth=4
-    setlocal tabstop=4
-    setlocal noexpandtab
+    setlocal shiftwidth=2
+    setlocal tabstop=2
+    setlocal expandtab
     set textwidth=119
     set tw=119
     set colorcolumn=120,160
@@ -220,8 +220,9 @@ Bundle 'git://git.wincent.com/command-t.git'
 " ...
 Bundle 'majutsushi/tagbar'
 Bundle 'vim-startify'
-Bundle 'clang-complete'
+" Bundle 'clang-complete'
 Bundle 'scrooloose/nerdcommenter'
+" Bundle 'vim-scripts/OmniCppComplete'
 
 filetype plugin indent on     " required!
 "
