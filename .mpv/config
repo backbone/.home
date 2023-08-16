@@ -1,11 +1,11 @@
 # Write your default config options here!
 [default]
 stop-screensaver="yes"
-heartbeat-cmd="xscreensaver-command -deactivate &"
+#heartbeat-cmd="xscreensaver-command -deactivate &"
 
 save-position-on-quit=yes
 subcp=enca:ru:utf8
 #hwdec=vaapi
-hwdec=vdpau
+#hwdec=vdpau
 fullscreen=yes
-vo=vaapi
+vo=gpu
