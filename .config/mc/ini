@@ -91,7 +91,7 @@ permission_mode=0
 quick_search_case_sensitive=2
 ignore_ftp_chattr_errors=true
 keymap=mc.keymap
-skin=sand256
+skin=dark
 
 panel_scroll_pages=1
 auto_save_setup_panels=1
@@ -113,23 +113,25 @@ editor_state_full_filename=false
 
 safe_overwrite=false
 
+shadows=true
+
 [Layout]
-message_visible=1
-keybar_visible=0
-xterm_title=1
+message_visible=true
+keybar_visible=false
+xterm_title=true
 output_lines=0
-command_prompt=1
-menubar_visible=0
+command_prompt=true
+menubar_visible=false
 show_mini_info=1
-free_space=1
+free_space=true
 
 permission_mode=0
 filetype_mode=1
 
-horizontal_split=0
-vertical_equal=1
-left_panel_size=159
-horizontal_equal=1
+horizontal_split=false
+vertical_equal=true
+left_panel_size=118
+horizontal_equal=true
 top_panel_size=29
 
 [Misc]
@@ -144,6 +146,8 @@ clipboard_store=
 clipboard_paste=
 
 find_ignore_dirs=
+
+spell_language=en
 
 [Colors]
 base_color=
@@ -163,6 +167,8 @@ xterm-256color=
 screen-256color=
 
 screen-256color-bce=
+
+rxvt-unicode-256color=
 
 [Panels]
 kilobyte_si=false
