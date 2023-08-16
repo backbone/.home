@@ -23,7 +23,7 @@ cmd.cdiff = colordiff
 opts.cdiff = -uprN
 
 [extensions]
-duckcharset = ~/.hgext/duckcharset/hgext/duckcharset.py
+#duckcharset = ~/.hgext/duckcharset/hgext/duckcharset.py
 #onsub= ~/.hgext/onsub/onsub.py
 #compass = ~/.hgext/compass/compass.py
 #hggit = ~/.hgext/hg-git/hggit
@@ -44,7 +44,7 @@ record=
 fetch=
 convert=
 # brokes .hgignore (for example in /.hg)
-#largefiles =
+largefiles =
 pager =
 parentrevspec =
 progress =
@@ -54,6 +54,8 @@ relink =
 schemes=
 mq =
 churn =
+#journal =
+shelve=
 
 [patch]
 eol = auto
@@ -74,6 +76,7 @@ cacerts=
 
 [largefiles]
 minsize = 1
+usercache = ~/.hg-largefiles
 
 [pager]
 pager = LESS='FSRX' less
