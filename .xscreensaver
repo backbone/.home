@@ -1,8 +1,8 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-settings 6.06 for kolan on Sat Sep 16 22:49:02 2023.
+# Written by xscreensaver-settings 6.07 for kolan on Fri Nov 17 11:56:11 2023.
 # https://www.jwz.org/xscreensaver/
 
-timeout:	0:03:00
+timeout:	0:08:00
 cycle:		0:00:00
 lock:		True
 lockTimeout:	0:30:00
@@ -20,9 +20,9 @@ fadeSeconds:	0:00:03
 ignoreUninstalledPrograms:False
 dpmsEnabled:	True
 dpmsQuickOff:	True
-dpmsStandby:	0:03:00
-dpmsSuspend:	0:03:00
-dpmsOff:	0:03:00
+dpmsStandby:	0:08:00
+dpmsSuspend:	0:08:00
+dpmsOff:	0:08:00
 grabDesktopImages:  False
 grabVideoFrames:    False
 chooseRandomImages: False
@@ -37,7 +37,7 @@ textFile:	/etc/gentoo-release
 textProgram:	fortune
 textURL:	https://planet.gentoo.org/rss20.xml
 dialogTheme:	default
-settingsGeom:	1920,1095 -1,-1
+settingsGeom:	1920,15 -1,-1
 
 programs:								      \
 				maze --root				    \n\
@@ -288,6 +288,10 @@ programs:								      \
   GL: 				mapscroller --root			    \n\
   GL: 				nakagin --root				    \n\
   GL: 				squirtorus --root			    \n\
+  GL: 				cubocteversion --root			    \n\
+				droste --root				    \n\
+  GL: 				papercube --root			    \n\
+  GL: 				skulloop --root				    \n\
 
 
 pointerHysteresis:  10
