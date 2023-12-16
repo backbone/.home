@@ -7,5 +7,5 @@ save-position-on-quit=yes
 subcp=enca:ru:utf8
 #hwdec=vaapi
 #hwdec=vdpau
-fullscreen=yes
+#fullscreen=yes
 vo=gpu
