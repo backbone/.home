@@ -1,4 +1,4 @@
 #include ".urxvt/Xdefaults"
 #include ".fonts/Xdefaults"
 
-Xcursor.theme: gentoo-silver
+! Xcursor.theme: gentoo-silver

@@ -13,7 +13,6 @@ gtk-theme-name  = "Adwaita"
 
 include "/home/kolan/.gtkrc.mine"
 
-gtk-cursor-theme-name = "gentoo-silver"
-gtk-cursor-theme-size = "24"
+#gtk-cursor-theme-name = "gentoo-silver"
 
 # -- THEME AUTO-WRITTEN DO NOT EDIT
