@@ -4,8 +4,10 @@ stop-screensaver="yes"
 #heartbeat-cmd="xscreensaver-command -deactivate &"
 
 save-position-on-quit=yes
-subcp=enca:ru:utf8
+#subcp=enca:ru:utf8
 #hwdec=vaapi
 #hwdec=vdpau
 #fullscreen=yes
 vo=gpu
+
+#osd-status-msg=${playback-time/full} / ${duration} (${percent-pos}%)\nframe: ${estimated-frame-number} / ${estimated-frame-count}
